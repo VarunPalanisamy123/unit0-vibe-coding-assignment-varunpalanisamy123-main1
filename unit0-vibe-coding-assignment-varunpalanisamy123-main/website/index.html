@@ -7,12 +7,61 @@
 
 <body style="background-color: lightgrey;">
 
-<div class="container">
-
     <h1 class="section-title" style="text-align: center;">The Minecraft Guide</h1>
 
     <h2 class="section-title" style="text-align: center;">(Everything you need to know to beat the game)</h2>
     <h3 class="section-title" style="text-align: center;">(2+ months experience recommended)</h3>
+    <img src="SURVIVE.jpg" style="width: 700px; height: auto;" class="center-image">
+<br>
+<h2 style="text-align: center;">Table of Contents:</h2>
+
+<div style="text-align: center;">
+<button onclick="window.location.href='gatherresources.html'" class="button">
+1. Getting Resources
+</button>
+
+<button onclick="window.location.href='nether.html'" class="button">
+2. The Nether
+</button>
+
+<button onclick="window.location.href='stronghold.html'" class="button">
+3. The Stronghold
+</button>
+
+<button onclick="window.location.href='enderdragon.html'" class="button">
+4. The End
+</button>
+
+</div>
+
+<div class="joke-card">
+<h2>Minecraft Joke</h2>
+ 
+<p id="joke">
+Click the button for a joke!
+</p>
+ 
+<button class="toc-btn" onclick="showJoke()">
+Tell Me A Joke
+</button>
+</div>
+
+<script>
+function showJoke() {
+ 
+const jokes = [
+"Why didn't Steve get lost? Because he always follows the block map!",
+"Why are Endermen bad at hiding? They're always sticking out!",
+"What is a Creeper's favorite type of music? Boom-box music!",
+"Why did the chicken cross the Nether? To get to the End!",
+"Why was the Diamond Pickaxe happy? It finally found its purpose!"
+];
+ 
+let randomJoke = Math.floor(Math.random() * jokes.length);
+ 
+document.getElementById("joke").innerText = jokes[randomJoke];
+}
+</script>
 
 </body>
 </html>
